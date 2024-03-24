@@ -18,9 +18,11 @@ def setup_default_configs():
         'docker_timeout': '3600',
         'frp_api_url': 'http://frpc:7400',
         'frp_http_port': '8080',
+        'frp_direct_ip_address': '0.0.0.0',
         'frp_http_domain_suffix': '127.0.0.1.nip.io',
         'frp_direct_port_maximum': '10100',
         'frp_direct_port_minimum': '10000',
+        'frp_config_template':'[common] \ntoken = your_token\nserver_addr = 172.1.0.3\nserver_port = 7000\nadmin_addr = 172.1.0.4\nadmin_port = 7400',
         'template_http_subdomain': '{{ container.uuid }}',
         'template_chall_flag': '{{ "flag{"+uuid.uuid4()|string+"}" }}',
     }.items():
