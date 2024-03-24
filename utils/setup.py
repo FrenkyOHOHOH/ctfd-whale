@@ -8,6 +8,7 @@ def setup_default_configs():
         'setup': 'true',
         'docker_api_url': 'unix:///var/run/docker.sock',
         'docker_credentials': '',
+        'docker_auto_connect_network': 'ctfd-fr3nky_frp_containers',
         'docker_dns': '127.0.0.1',
         'docker_max_container_count': '100',
         'docker_max_renew_count': '5',
